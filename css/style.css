@@ -1,0 +1,52 @@
+.page-header {
+  text-align: center;
+  height: 100vh; }
+  .page-header .header-content {
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 10rem;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .page-header .header-content .project-name {
+      font-family: 'Source Code Pro', monospace; }
+    .page-header .header-content .project-tagline {
+      font-family: 'Quicksand', monospace; }
+
+.scroll {
+  margin-top: auto; }
+  .scroll div {
+    display: inline-block;
+    vertical-align: middle; }
+  .scroll a {
+    display: inline-block;
+    border-radius: 50%; }
+  .scroll a:hover .down {
+    border: 0.35em solid #e74c3c; }
+  .scroll a:hover .down:after {
+    border-top: 0.3em solid #e74c3c;
+    border-right: 0.3em solid #e74c3c; }
+  .scroll .down {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    border: 0.35em solid #FFF;
+    border-radius: 50%;
+    margin-left: 0.75em; }
+  .scroll .down:after {
+    content: '';
+    display: inline-block;
+    margin-top: 0.45em;
+    width: 1.4em;
+    height: 1.4em;
+    border-top: 0.3em solid #FFF;
+    border-right: 0.3em solid #FFF;
+    -ms-transform: rotate(135deg);
+        transform: rotate(135deg); }
+
+a[id="scroll-to-content"]:target ~ #main-content {
+  -ms-transform: translateY(0px);
+      transform: translateY(0px); }
+
+.main-content {
+  min-height: 100vh; }
