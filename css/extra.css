@@ -1,0 +1,116 @@
+.page-header {
+  text-align: center;
+  height: 100vh;
+  background-image: url("../img/cover.jpg"); }
+  .page-header .project-name {
+    font-family: 'Source Code Pro', monospace;
+    color: #FFF;
+    font-size: 2.8em; }
+    @media (min-width: 576px) {
+      .page-header .project-name {
+        font-size: 3.6em; } }
+    @media (min-width: 768) {
+      .page-header .project-name {
+        font-size: 4.5em; } }
+  .page-header .project-tagline {
+    font-family: 'Quicksand', sans-serif;
+    color: #FFF;
+    font-size: 1.2em; }
+    @media (min-width: 576px) {
+      .page-header .project-tagline {
+        font-size: 1.5em; } }
+    @media (min-width: 768) {
+      .page-header .project-tagline {
+        font-size: 1.8em; } }
+  .page-header .content-header {
+    height: 80%; }
+  .page-header .page-content {
+    height: 20%; }
+
+.scroll {
+  margin-top: auto; }
+  .scroll div {
+    display: inline-block;
+    vertical-align: middle; }
+  .scroll a {
+    display: inline-block;
+    border-radius: 50%; }
+  .scroll a:hover .down {
+    border: 0.35em solid #626567; }
+  .scroll a:hover .down:after {
+    border-top: 0.3em solid #626567;
+    border-right: 0.3em solid #626567; }
+  .scroll .down {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    border: 0.35em solid #FFF;
+    border-radius: 50%;
+    margin-left: 0.75em; }
+  .scroll .down:after {
+    content: '';
+    display: inline-block;
+    margin-top: 0.65em;
+    width: 1.4em;
+    height: 1.4em;
+    border-top: 0.3em solid #FFF;
+    border-right: 0.3em solid #FFF;
+    -ms-transform: rotate(135deg);
+        transform: rotate(135deg); }
+
+a[id="scroll-to-content"]:target ~ #main-content {
+  -ms-transform: translateY(0px);
+      transform: translateY(0px); }
+
+.main-content {
+  min-height: 100vh;
+  font-size: 1.2em; }
+  .main-content h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 3em; }
+  .main-content .section-title {
+    padding-bottom: 50px; }
+  .main-content .section-content {
+    border-bottom: 1px solid black; }
+  .main-content .container {
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px; }
+  .main-content #about .section-detail {
+    text-align: center; }
+  .main-content #contact {
+    background-color: #f7f9f9; }
+    .main-content #contact .contact-img {
+      width: 150px; }
+    .main-content #contact .contact-info {
+      padding-top: 20px; }
+    .main-content #contact a {
+      color: black;
+      font-style: normal; }
+  .main-content #resume .section-detail {
+    max-height: 700px;
+    overflow-y: scroll; }
+  .main-content #resume .resume-section {
+    font-family: 'Lato', 'Quicksand', sans-serif;
+    border-radius: 10px;
+    border: 2px solid #C00000;
+    padding: 20px;
+    margin-top: 20px; }
+  .main-content #resume .resume-bold {
+    font-weight: bold; }
+  .main-content #resume .resume-italics {
+    font-style: italic; }
+  .main-content #resume .resume-section-title {
+    color: #C00000;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 10px; }
+    @media (min-width: 992px) {
+      .main-content #resume .resume-section-title {
+        float: right;
+        text-align: right;
+        padding-bottom: 0px; } }
+  .main-content #github {
+    background-color: #f7f9f9; }
+  .main-content #footer .container {
+    border: 0px; }

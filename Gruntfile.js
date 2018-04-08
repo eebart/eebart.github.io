@@ -27,7 +27,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'css/style.css': 'scss/style.scss'
+          'css/extra.css': 'scss/extra.scss'
         }
       }
     },
@@ -40,8 +40,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'css/cayman.css': 'css/cayman.css',
-          'css/style.css': 'css/style.css',
+          'css/extra.css': 'css/extra.css',
         }
       }
     },
@@ -60,7 +59,7 @@ module.exports = function(grunt) {
         reload: "style.css"
       },
       js: {
-        reload: "custom.js"
+        reload: "main.js"
       },
       all: {
         reload: true

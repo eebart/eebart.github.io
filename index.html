@@ -1,42 +1,280 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css"  href="css/extra.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Source+Code+Pro" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="css/github-activity-0.1.5.min.css">
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="js/github-activity-0.1.5.min.js"></script>
+
     <title>Erin Bartholomew</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Source+Code+Pro" rel="stylesheet">
-
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
-    <script type="text/javascript" src="js/custom.js" ></script>
-
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/cayman.css">
-    <link rel="stylesheet" href="css/style.css">
-
   </head>
   <body>
-    <section class="page-header">
-        <div class="header-content">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand page-scroll" href="#page-header"> Erin Bartholomew</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#github">Github</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <section id="page-header" class="page-header">
+        <div class="row content-header">
+          <div class="col-md-12 col-md-offset-1 align-self-center">
             <h1 class="project-name">Erin Bartholomew</h1>
-            <h2 class="project-tagline">Background and Contact</h2>
+            <h2 class="project-tagline">Background and Contact Information</h2>
+          </div>
+        </div>
+        <div class="row page-content">
+          <div class="col-md-12 col-md-offset-1 align-self-bottom">
             <div class="scroll">
                 <div class="nav">
-                    <a href="#main-content" id="scroll-to-content"><span class="down"></span></a>
+                    <a href="#about" class="page-scroll"><span class="down"></span></a>
                 </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="main-content">
+        <div id="about" class="section-content">
+            <div class="container">
+                <div class="section-title text-center center">
+                    <h2>About me</h2>
+                </div>
+                <div class="section-detail">
+                    Current masters student studying Engineering and Policy Analysis at Delft University of Technology.
+                    Previously obtained a bachelors degree in Computer Enginnering at the University of Nebraska.
+                    Several years of experience as a full- and part-time software developer. History as a versatile,
+                    innovative, and analytical software developer with a desire for finding robust and effective solutions
+                    to client problems. Fast learner with strong leadership and communication skills. Highly organized with
+                    over 6 years of professional experience.
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="section-content">
+            <div class="container">
+                <div class="section-title text-center center">
+                  <h2>Contact</h2>
+                </div>
+                <div class="section-detail">
+                    <div class="row justify-content-center">
+                      <div class="col-sm-12 col-md-4 text-center">
+                        <a href="mailto:eebartholomew@gmail.com">
+                        <img class="contact-img" src="img/mail.png"/>
+                        <div class="contact-info">
+                            <h3>Email</h3>
+                            EEBartholomew@gmail.com
+                        </div>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-4 text-center">
+                        <a href="https://www.google.com/maps/@52.0787046,4.3188469,14z">
+                        <img class="contact-img" src="img/map.png"/>
+                        <div class="contact-info">
+                            <h3>Current Location</h3>
+                            The Hague, Netherlands
+                        </div>
+                        </a>
+                      </div>
+                      <div class="col-sm-12 col-md-4 text-center">
+                        <a href="https://www.linkedin.com/in/erinbartholomew/">
+                        <img class="contact-img" src="img/linkedin.png"/>
+                        <div class="contact-info">
+                            <h3>LinkedIn</h3>
+                            in/erinbartholomew
+                        </div>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="resume" class="section-content">
+            <div class="container">
+                <div class="section-title text-center center">
+                  <h2>Resume</h2>
+                </div>
+                <div class="section-detail">
+                    <div class="resume-section">
+                        <div class="resume-section-title">[Education]</div>
+                        <div class="resume-content">
+                            <span class="resume-bold">Masters of Science  &sdot;  Engineering & Policy Analysis (EPA)</span> <br />
+                            Delft University of Technology <br />
+                            Faculty of Technology, Policy, and Management <br />
+                            Analytical approach to policy and decision making using several modeling methods <br />
+                            Expected Graduation: September, 2018  &sdot;  Current GPA: 8.83 <br /> <br />
+
+                            <span class="resume-bold">Bachelors of Science  &sdot;  Computer Engineering  &sdot;  with Distinction and Honors</span> <br />
+                            University of Nebraska, Lincoln Jeffrey S. Raikes School of Computer Science and Management <br />
+                            Graduated May, 2011  &sdot;  GPA: 3.932
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <div class="resume-section-title">[Experience]</div>
+                        <div class="resume-content">
+                            <span class="resume-bold">Delft University of Technology  &sdot;  Research Assistant  &sdot;  8/2017 – Present </span> <br />
+                            Built services to support automated image recognition of passing train cars with partner company <br />
+                            Used Java, OpenCV, Tesseract, JavaScript for service development <br /> <br />
+
+                            <span class="resume-bold">PointSource  &sdot;  Software Developer  &sdot;  3/2015 – 7/2016 </span> <br />
+                            Leading iOS development expert at software consulting company <br />
+                            Partnered with external developers to design and develop web and hybrid mobile insurance app <br />
+                            Analyzed authentication solutions and provided recommendations and implementation of solution <br />
+                            Investigated and provided comparative study of indoor location solutions <br />
+                            Developed mobile apps using latest iOS technology, including WatchOS and tvOS <br /> <br />
+
+                            <span class="resume-bold">IBM  &sdot;  Software Engineer  &sdot;  7/2011 – 2/2015 </span> <br />
+                            Developed frameworks to provide enhanced location support for iOS and Android platforms <br />
+                            Created mobile applications to demonstrate use of IBM’s mobile focused cloud computing services <br />
+                            Served as scrum master for team focused on integrating IBM services with cutting edge iOS Apps <br /> <br />
+
+                            Designed and implemented generic interface to display XML-based content on DataPower Blueprint Pattern Console using HTML, JavaScript, and custom web widgets <br /> <br />
+
+                            Developed features for WebSphere Virtual Enterprise web console using Java, JavaScript, and HTML <br />
+                            Designed interface for dynamic clustering feature for a web based, mobile focused Liberty console <br />
+                             Worked with several customers to answer product questions and solve reported problems <br />
+                            Led efforts to ensure the WebSphere Virtual Enterprise console met IBM’s accessibility requirements <br /> <br />
+
+                            <span class="resume-bold">Nebraska Global  &sdot;  Software Development Intern  &sdot;  8/2010 – 12/2010 and 4/2011 – 6/2011</span>   <br />
+                            Worked for new startup software company on team of 12 software developers <br />
+                             Designed and developed time tracking plugin for Outlook using Microsoft programming technologies <br />
+                            Worked on design stages of a new product that maps relationships of entities in Microsoft Dynamics <br /> <br />
+
+                            <span class="resume-bold">IBM  &sdot;  Technical Intern, Extreme Blue Program  &sdot;  Summer 2010 </span> <br />
+                             Worked to create innovative solutions to increase adoption of an enterprise social network <br />
+                            Designed and implemented interface for polling widget using JavaScript, HTML, and web services <br /> <br />
+
+                            <span class="resume-bold">Garmin International  &sdot;  Software Engineering Intern  &sdot;  Summer 2008, 2009</span>  <br />
+                             Developed feature to enable Point of Interest routing on Oregon outdoor navigation product <br />
+                            Reworked and added features to several internal tools including USB device detection tool <br /> <br />
+
+                            <span class="resume-bold">Kansas State University  &sdot;  Research Assistant  &sdot;  Computer Science Department  &sdot;  Summer 2007 </span> <br />
+                            Worked on a team to update spillway erosion project for US Department of Agriculture <br />
+                            Helped facilitate robotics workshop for Excite! program to encourage middle school girls to study STEM
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <div class="resume-section-title">[Capstone Projects]</div>
+                        <div class="resume-content">
+                            <span class="resume-bold">Masters Thesis Project (In Progress)</span>  <br />
+                            A comparative analysis of robust decision support methods <br />
+                            Focuses on multi-objective robust decision making and multi-objective robust optimization methods <br /> <br />
+
+                            <span class="resume-bold">Computer Engineering Senior Design </span> <br />
+                            Capstone project for the computer engineering program <br />
+                            Developed wireless audio monitoring system for guitar, including integrated circuitry and web application <br /> <br />
+
+                            <span class="resume-bold">Jeffrey S. Raikes School Design Studio</span>  <br />
+                            Capstone project for Raikes School program to be completed in Junior and Senior years <br />
+                            Partner with technical company to develop real world solutions to solve cutting edge problems <br /> <br />
+
+                            <span class="resume-italics">IBM</span>  <br />
+                            Developed homepage for Lotus Connections mobile web solution using HTML and JavaScript <br />
+                            Work was featured at the opening session of a major IBM conference in 2010 Used agile development process and served as scrum master for team of 6 developers <br /> <br />
+
+                            <span class="resume-italics">Interact Inc. </span> <br />
+                             Created a web-based visual application for creating automated phone response programs <br />
+                            Used mxGraph and Ext JS JavaScript frameworks and Java for the backend
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <div class="resume-section-title">[Academic Honors]</div>
+                        <div class="resume-content">
+                            Excellence Scholarship Recipient, TU Delft <br />
+                            Regents Scholarship Recipient, University of Nebraska <br />
+                            Jeffrey S. Raikes School Scholarship Recipient, University of Nebraska <br />
+                            Honors Program Scholarship Recipient, University of Nebraska <br />
+                            Dean’s list  &sdot;  All Semesters, University of Nebraska <br />
+                            Outstanding Undergraduate Senior  &sdot;  Computer Engineering
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <div class="resume-section-title">[Coursework]</div>
+                        <div class="resume-content">
+                            <span class="resume-bold">Policy Analysis</span>: Multi-Actor Analysis, Game Theory, Social Network Theory, Cognitive Mapping, Intercultural Management, Political Decision Making Theory <br />
+                            <span class="resume-bold">Modeling</span>: Discrete (Simio), Agent-Based (NetLogo), System Dynamics (Vensim), Exploratory Modeling Analysis, Simulation Masterclass, Data Analytics <br />
+                            <span class="resume-bold">Math</span>: Differential Equations, Calculus-Based Statistics, Numerical Analysis, Matrix Theory, Discrete Logic <br />
+                            <span class="resume-bold">Business</span>: International Strategic Management, Business Systems Analysis, Finance, Accounting <br />
+                            <span class="resume-bold">Computer Science</span>: Software Engineering, Algorithms and Data Structures, Computer Architecture, Electrical Engineering: Electronics and Circuits, Digital Systems, Digital Logic Design
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <div class="resume-section-title">[Extras]</div>
+                            Commissioner of Education  &sdot;  First Board of Dentatus Student Advisory Chapter <br />
+                            Student Representative  &sdot;  Jeffrey S. Raikes School Corporate Advisory Board <br />
+                            Computer Science and Engineering Department Student Advisory Board <br /> <br />
+
+                            Certified Scrum Master  &sdot;  Certified Agile Software Developer <br />
+                            Volunteer for Honduras Child Alliance
+                        <div class="resume-content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="github" class="section-content">
+            <div class="container">
+                <div class="section-title text-center center">
+                  <h2>Github</h2>
+                </div>
+                <div class="section-detail">
+                    <div id="feed"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="container">
+                <p>Copyright &copy; 2018 Erin Bartholomew</p>
+                <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
             </div>
         </div>
     </section>
 
-    <section id="main-content" class="main-content">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
-      <footer class="site-footer">
-          <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
 
-    </section>
-
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

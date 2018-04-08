@@ -1,0 +1,176 @@
+.page-header {
+  text-align: center;
+  height:100vh;
+  background-image: url("../img/cover.jpg");
+
+  .project-name {
+    font-family: 'Source Code Pro', monospace;
+    color: #FFF;
+    font-size:2.8em;
+
+    @media (min-width: 576px) {
+      font-size: 3.6em;
+    }
+    @media (min-width: 768) {
+      font-size: 4.5em;
+    }
+
+  }
+
+  .project-tagline {
+    font-family: 'Quicksand', sans-serif;
+    color: #FFF;
+    font-size:1.2em;
+    @media (min-width: 576px) {
+      font-size: 1.5em;
+    }
+    @media (min-width: 768) {
+      font-size: 1.8em
+    }
+  }
+
+  .content-header {
+    height:80%;
+  }
+  .page-content {
+    height:20%;
+  }
+}
+
+.scroll {
+  margin-top: auto;
+
+  div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  a {
+    display: inline-block;
+    border-radius: 50%;
+  }
+
+  a:hover .down, {
+    border: 0.35em solid #626567;
+  }
+
+  a:hover .down:after {
+    border-top: 0.3em solid #626567;
+    border-right: 0.3em solid #626567;
+  }
+
+  .down {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    border: 0.35em solid #FFF;
+    border-radius: 50%;
+    margin-left: 0.75em;
+  }
+
+  .down:after {
+    content: '';
+  	display: inline-block;
+    margin-top: 0.65em;
+    width: 1.4em;
+    height: 1.4em;
+    border-top: 0.3em solid #FFF;
+    border-right: 0.3em solid #FFF;
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}
+
+a[ id= "scroll-to-content" ]:target ~ #main-content {
+    -webkit-transform: translateY( 0px);
+    transform: translateY( 0px );
+}
+
+.main-content {
+  min-height:100vh;
+  font-size:1.2em;
+
+  h2 {
+    font-family: 'Lato', sans-serif;
+    font-size:3em;
+  }
+
+
+  .section-title {
+    padding-bottom:50px;
+  }
+
+  .section-content {
+    border-bottom:1px solid black;
+  }
+
+  .container {
+    padding:20px;
+    padding-top:60px;
+    padding-bottom:60px;
+  }
+
+  #about {
+    .section-detail {
+      text-align: center;
+    }
+  }
+  #contact {
+    background-color: #f7f9f9;
+
+    .contact-img {
+      width:150px;
+    }
+    .contact-info {
+      padding-top:20px;
+    }
+
+    a {
+      color:black;
+      font-style:normal;
+    }
+  }
+  #resume {
+    .section-detail {
+      max-height:700px;
+      overflow-y:scroll;
+    }
+
+    .resume-section {
+      font-family: 'Lato', 'Quicksand', sans-serif;
+      border-radius: 10px;
+      border: 2px solid #C00000;
+      padding: 20px;
+      margin-top:20px;
+    }
+
+    .resume-bold {
+      font-weight:bold;
+    }
+    .resume-italics {
+      font-style:italic;
+    }
+
+    .resume-section-title {
+      color: #C00000;
+      font-size:1.5em;
+      font-weight:bold;
+      padding-bottom:10px;
+      @media (min-width: 992px) {
+        float: right;
+        text-align:right;
+        padding-bottom:0px;
+      }
+    }
+  }
+  #github {
+    background-color: #f7f9f9;
+  }
+
+  #footer {
+    .container {
+      border:0px;
+    }
+  }
+}

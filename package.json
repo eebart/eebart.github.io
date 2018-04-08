@@ -1,9 +1,12 @@
 {
-  "name": "Cayman",
+  "name": "eebart.github.io",
   "version": "1.0.0",
-  "homepage": "http://github.com/jasonlong/cayman-theme",
-  "author": "Jason Long",
-  "scss": "./scss/cayman.scss",
+  "description": "Personal site for Erin Bartholomew",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eebart/eebart.github.io.git"
+  },
+  "author": "Erin Bartholomew",
   "devDependencies": {
     "autoprefixer": "^6.6.0",
     "grunt-browser-sync": "~2.1.1",
