@@ -1,4 +1,11 @@
 
+function downloadResume() {
+
+};
+function downloadCV() {
+
+};
+
 function main() {
 
 (function () {

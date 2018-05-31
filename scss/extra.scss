@@ -140,7 +140,7 @@ a[ id= "scroll-to-content" ]:target ~ #main-content {
     .resume-section {
       font-family: 'Lato', 'Quicksand', sans-serif;
       border-radius: 10px;
-      border: 2px solid #C00000;
+      border: 2px solid #BFBFBF;
       padding: 20px;
       margin-top:20px;
     }
@@ -153,15 +153,50 @@ a[ id= "scroll-to-content" ]:target ~ #main-content {
     }
 
     .resume-section-title {
-      color: #C00000;
+      color: #93130E;
       font-size:1.5em;
       font-weight:bold;
       padding-bottom:10px;
+      margin-top:-10px;
       @media (min-width: 992px) {
         float: right;
         text-align:right;
         padding-bottom:0px;
       }
+    }
+
+    .btn-group {
+      // margin:20px;
+      margin: 20px 20px;
+      // display: inline-block;
+    }
+
+    .btn-group button {
+      background-color: #93130E; /* Green background */
+      border: 1px solid #93130E; /* Green border */
+      border-radius:5px;
+      color: white; /* White text */
+      padding: 10px 24px; /* Some padding */
+      cursor: pointer; /* Pointer/hand icon */
+      float: left; /* Float the buttons side by side */
+      margin-left:10px;
+      margin-right:10px;
+    }
+
+    .btn-group button:not(:last-child) {
+        border-right: none; /* Prevent double borders */
+    }
+
+    /* Clear floats (clearfix hack) */
+    .btn-group:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    /* Add a background color on hover */
+    .btn-group button:hover {
+        background-color: #7F2626;
     }
   }
   #github {

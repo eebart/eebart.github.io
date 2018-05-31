@@ -87,29 +87,60 @@ a[id="scroll-to-content"]:target ~ #main-content {
     .main-content #contact a {
       color: black;
       font-style: normal; }
-  .main-content #resume .section-detail {
-    max-height: 700px;
-    overflow-y: scroll; }
-  .main-content #resume .resume-section {
-    font-family: 'Lato', 'Quicksand', sans-serif;
-    border-radius: 10px;
-    border: 2px solid #C00000;
-    padding: 20px;
-    margin-top: 20px; }
-  .main-content #resume .resume-bold {
-    font-weight: bold; }
-  .main-content #resume .resume-italics {
-    font-style: italic; }
-  .main-content #resume .resume-section-title {
-    color: #C00000;
-    font-size: 1.5em;
-    font-weight: bold;
-    padding-bottom: 10px; }
-    @media (min-width: 992px) {
-      .main-content #resume .resume-section-title {
-        float: right;
-        text-align: right;
-        padding-bottom: 0px; } }
+  .main-content #resume {
+    /* Clear floats (clearfix hack) */
+    /* Add a background color on hover */ }
+    .main-content #resume .section-detail {
+      max-height: 700px;
+      overflow-y: scroll; }
+    .main-content #resume .resume-section {
+      font-family: 'Lato', 'Quicksand', sans-serif;
+      border-radius: 10px;
+      border: 2px solid #BFBFBF;
+      padding: 20px;
+      margin-top: 20px; }
+    .main-content #resume .resume-bold {
+      font-weight: bold; }
+    .main-content #resume .resume-italics {
+      font-style: italic; }
+    .main-content #resume .resume-section-title {
+      color: #93130E;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding-bottom: 10px;
+      margin-top: -10px; }
+      @media (min-width: 992px) {
+        .main-content #resume .resume-section-title {
+          float: right;
+          text-align: right;
+          padding-bottom: 0px; } }
+    .main-content #resume .btn-group {
+      margin: 20px 20px; }
+    .main-content #resume .btn-group button {
+      background-color: #93130E;
+      /* Green background */
+      border: 1px solid #93130E;
+      /* Green border */
+      border-radius: 5px;
+      color: white;
+      /* White text */
+      padding: 10px 24px;
+      /* Some padding */
+      cursor: pointer;
+      /* Pointer/hand icon */
+      float: left;
+      /* Float the buttons side by side */
+      margin-left: 10px;
+      margin-right: 10px; }
+    .main-content #resume .btn-group button:not(:last-child) {
+      border-right: none;
+      /* Prevent double borders */ }
+    .main-content #resume .btn-group:after {
+      content: "";
+      clear: both;
+      display: table; }
+    .main-content #resume .btn-group button:hover {
+      background-color: #7F2626; }
   .main-content #github {
     background-color: #f7f9f9; }
   .main-content #footer .container {
