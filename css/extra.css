@@ -115,7 +115,8 @@ a[id="scroll-to-content"]:target ~ #main-content {
           text-align: right;
           padding-bottom: 0px; } }
     .main-content #resume .btn-group {
-      margin: 20px 20px; }
+      margin: 20px 20px;
+      display: inline-block; }
     .main-content #resume .btn-group button {
       background-color: #93130E;
       /* Green background */
@@ -143,5 +144,7 @@ a[id="scroll-to-content"]:target ~ #main-content {
       background-color: #7F2626; }
   .main-content #github {
     background-color: #f7f9f9; }
-  .main-content #footer .container {
-    border: 0px; }
+  .main-content #footer {
+    background-color: #f7f9f9; }
+    .main-content #footer .container {
+      border: 0px; }
